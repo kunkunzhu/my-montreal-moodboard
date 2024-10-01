@@ -1,3 +1,5 @@
+/** @format */
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        text: ["var(--text-font)"],
+        title: ["var(--title-font)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

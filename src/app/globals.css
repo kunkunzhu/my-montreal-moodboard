@@ -1,23 +1,18 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #fff5ed;
+  --foreground: #333333;
 }
 
 body {
+  cursor: crosshair; /* TO DO: add custom crosshair */
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
 }
 
 @layer utilities {
@@ -25,3 +20,11 @@ body {
     text-wrap: balance;
   }
 }
+
+/* TO DO: Implement dark theme */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
